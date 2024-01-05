@@ -24,7 +24,7 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   /*
-  Josh's Custom CSS Reset
+  modified Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
   *,
@@ -103,17 +103,13 @@ const { title } = Astro.props;
     --xxl: 2rem;
     background: #13151a;
     color: var(--light-text-color);
-    font-family: "Circular Std";
+    font-family: "Circular Std", sans-serif;
     margin-block: var(--xxl);
     margin-inline: auto;
     min-width: 320px;
     max-width: 690px;
     padding-inline: var(--regular);
   }
-  /* @font-face {
-    font-family: "Circular Std";
-    src: url("../fonts/CircularStd-Book.otf") format("opentype");
-  } */
   @font-face {
     font-family: "Circular Std";
     src:
@@ -123,14 +119,4 @@ const { title } = Astro.props;
     font-style: normal;
     font-display: swap;
   }
-
-  /* @font-face {
-    font-family: "Circular Std";
-    src:
-      url("../fonts/CircularStd-Medium.woff2") format("woff2"),
-      url("../fonts/CircularStd-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  } */
 </style>
