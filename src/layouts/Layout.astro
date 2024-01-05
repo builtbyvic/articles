@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
 }
@@ -13,7 +14,7 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/storm.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -92,8 +93,15 @@ const { title } = Astro.props;
     --light-text-color: #fff;
     --xs: 0.25rem;
     --small: 0.5rem;
+    --medium: 0.75rem;
+    --regular: 1rem;
+    --lg: 1.25rem;
+    --xl: 1.5rem;
+    --xxl: 2rem;
     color: var(--light-text-color);
     font-family: "Circular Std";
+    margin-inline: auto;
+    max-width: 690px;
   }
   /* @font-face {
     font-family: "Circular Std";

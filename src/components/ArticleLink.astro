@@ -1,0 +1,24 @@
+---
+const { name, url, date, dateTime } = Astro.props;
+---
+
+<a href={url}>
+  <span>{name}</span>
+  <time datetime={dateTime}>{date}</time>
+</a>
+<!-- <hr /> -->
+
+<style>
+  a {
+    border-bottom: 1px groove rgba(255 255 255 / 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--small) var(--regular);
+    text-decoration: none;
+    transition: all 300ms ease;
+  }
+  a:hover {
+    background-color: rgba(255 255 255 / 0.1);
+    border-radius: var(--small);
+  }
+</style>

@@ -6,7 +6,7 @@
 <!-- Component Template (HTML + JS Expressions) -->
 <header>
   <div>
-    <h1>builtbyvic</h1>
+    <h1><a href="#">builtbyvic</a></h1>
     <!-- <h3>learn as you go</h3> -->
   </div>
   <nav>
@@ -32,11 +32,17 @@
   h1 {
     font-family: "The Beach";
   }
-
+  div h1 a {
+    text-decoration: none;
+  }
   header {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    justify-items: end;
+  }
+  header div {
+    justify-self: start;
   }
 </style>
