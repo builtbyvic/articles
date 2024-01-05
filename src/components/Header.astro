@@ -1,25 +1,8 @@
----
-// Component Script (JavaScript)
-// import SocialLink from "./SocialLink.astro";
----
-
-<!-- Component Template (HTML + JS Expressions) -->
 <header>
   <div>
     <h1><a href="/">builtbyvic</a></h1>
-    <!-- <h3>learn as you go</h3> -->
   </div>
   <nav>
-    <!-- <SocialLink
-      url="https://github.com/builtbyvic"
-      path="/github.svg"
-      tooltipText="Github"
-    />
-    <SocialLink
-      url="mailto:builtbyvic@gmail.com"
-      path="/email.svg"
-      tooltipText="Email"
-    /> -->
     <a href="https://github.com/builtbyvic">Github</a>
     <a href="mailto:builtbyvic@gmail.com">Email</a>
   </nav>
@@ -41,8 +24,12 @@
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     justify-items: end;
+    margin-block-end: var(--xxl);
   }
   header div {
     justify-self: start;
+  }
+  nav a:first-child {
+    margin-inline-end: var(--small);
   }
 </style>
